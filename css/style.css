@@ -1,0 +1,434 @@
+.about .about_cards .about_card .overlay, .team .about_cards .about_card .overlay, .work .work_cards .work_card figure .overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(219, 116, 117, 0.6), rgba(228, 205, 125, 0.75));
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.about .about_text h3::after, .services h3::after, .design h3::after, .service h3::after, .team .about_text h3::after, .work .work_header h3::after, .clients .clients_header h3::after, .clients .media-body p:first-of-type::after, .blog .blog_header h3::after, .map h2:after {
+  content: "";
+  height: 3px;
+  background-color: #f38181;
+  display: block;
+  width: 8rem;
+  margin: 2rem auto 2rem;
+}
+
+body {
+  font-family: 'kaushan_scriptregular';
+}
+
+.navbar {
+  background-color: rgba(32, 31, 31, 0.6);
+}
+
+.navbar .nav-item a {
+  font-weight: 300;
+  font-size: .8rem;
+  transition: all 0.5s ease;
+}
+
+.navbar .nav-item.active a {
+  color: #f6c23a;
+  border-bottom: 2px solid #FDE48A;
+}
+
+.navbar .nav-item:hover a {
+  color: #f6c23a !important;
+}
+
+.header {
+  background: linear-gradient(rgba(219, 116, 117, 0.6), rgba(228, 205, 125, 0.75)), url("../Imgs/homebg.jpg");
+  background-size: cover;
+}
+
+.header h3 {
+  font-size: 4.5rem;
+}
+
+.header h1 {
+  font-size: 8rem;
+  line-height: 10rem;
+}
+
+.header button {
+  border: 1px solid #fff;
+  width: 200px;
+  transition: all 0.5s ease;
+  font-size: 20px;
+}
+
+.header button:hover {
+  background-color: #f6c23a;
+  border-color: transparent;
+}
+
+.about .about_text p {
+  font-size: 1rem;
+}
+
+.about .about_text .f-parag {
+  font-size: 1.5rem;
+}
+
+.about .about_text h3 {
+  font-weight: 300;
+}
+
+.about .about_cards .about_card .overlay_text {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.5s ease;
+  color: #fff;
+}
+
+.about .about_cards .about_card .overlay_text i {
+  font-size: 25px;
+}
+
+.about .about_cards .about_card:hover figure {
+  box-shadow: 5px 5px 10px #3bd3ba;
+}
+
+.about .about_cards .about_card:hover figure .overlay {
+  opacity: 1;
+}
+
+.about .about_cards .about_card:hover .overlay_text {
+  opacity: 1;
+}
+
+.counts {
+  background-color: #3bd3ba;
+}
+
+.counts .count h2 {
+  font-size: 4rem;
+}
+
+.services i {
+  color: #3bd3ba;
+  font-size: 1.7rem;
+  opacity: 0.6;
+}
+
+.services h3::after {
+  margin-bottom: 5rem;
+}
+
+.services h6 {
+  font-size: 0.9rem;
+}
+
+.services .line {
+  width: 100%;
+  height: 2px;
+  background-color: #ddd;
+}
+
+.services .card_text p {
+  font-size: 0.8rem;
+}
+
+.design {
+  background-image: linear-gradient(rgba(219, 217, 219, 0.832), rgba(219, 217, 219, 0.832)), url("../Imgs/divicebg.jpg");
+  background-size: cover;
+  background-position: right;
+}
+
+.design .mob_img {
+  width: 60%;
+  bottom: -13%;
+  right: -35%;
+}
+
+.service .media-body .card-header {
+  background-color: white !important;
+}
+
+.service .media-body .card-header button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.service .media-body .card-body p {
+  font-size: 0.8rem;
+}
+
+.service i {
+  color: #3bd3ba;
+  font-size: 25px;
+}
+
+.feedback {
+  background-color: #f3f1f1;
+}
+
+.feedback img {
+  width: 13%;
+}
+
+.feedback h6 {
+  position: relative;
+  margin-left: 3rem;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+.feedback h6::after {
+  content: "";
+  height: 2px;
+  background-color: #f38181;
+  width: 8rem;
+  width: 2rem;
+  position: absolute;
+  top: 50%;
+  left: -2.5rem;
+  transform: translateY(-50%);
+}
+
+.team .about_text p {
+  font-size: 1rem;
+}
+
+.team .about_text .f-parag {
+  font-size: 1.5rem;
+}
+
+.team .about_text h3 {
+  font-weight: 300;
+}
+
+.team .about_cards .about_card .overlay_text {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.5s ease;
+  color: #fff;
+  list-style-type: none !important;
+  width: 100%;
+}
+
+.team .about_cards .about_card .overlay_text li {
+  width: 4rem;
+  height: 4rem;
+  background: #FDE48A;
+  color: #f38181;
+  padding: 1rem;
+  margin: 0.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.team .about_cards .about_card .overlay_text li i {
+  font-size: 25px;
+}
+
+.team .about_cards .about_card .overlay_text li:hover {
+  background-color: #f38181;
+  color: white;
+}
+
+.team .about_cards .about_card:hover figure {
+  box-shadow: 5px 5px 10px #3bd3ba;
+}
+
+.team .about_cards .about_card:hover figure .overlay {
+  opacity: 1;
+}
+
+.team .about_cards .about_card:hover .overlay_text {
+  opacity: 1;
+}
+
+.brands {
+  background-color: #f3f1f1;
+}
+
+.work {
+  overflow: hidden;
+}
+
+.work .work_header p {
+  font-size: 1rem;
+}
+
+.work .work_header .f-parag {
+  font-size: 1.5rem;
+}
+
+.work .work_header h3 {
+  font-weight: 300;
+}
+
+.work .work_cards .work_card {
+  padding: 0 !important;
+}
+
+.work .work_cards .work_card figure {
+  margin: 0;
+}
+
+.work .work_cards .work_card figure .overlay_text {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.5s ease;
+  color: #fff;
+}
+
+.work .work_cards .work_card figure .overlay_text i {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.work .work_cards .work_card figure .overlay_text h6 {
+  font-size: 14px;
+}
+
+.work .work_cards .work_card figure .overlay_text p {
+  font-size: 12px;
+}
+
+.work .work_cards .work_card figure:hover .overlay {
+  opacity: 1;
+}
+
+.work .work_cards .work_card figure:hover .overlay_text {
+  opacity: 1;
+}
+
+.feedback2 h6 {
+  position: relative;
+  margin-left: 3rem;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+.feedback2 h6::after {
+  content: "";
+  height: 2px;
+  background-color: #f38181;
+  width: 8rem;
+  width: 2rem;
+  position: absolute;
+  top: 50%;
+  left: -2.5rem;
+  transform: translateY(-50%);
+}
+
+.feedback2 img {
+  width: 20%;
+}
+
+.clients {
+  background-image: linear-gradient(rgba(219, 217, 219, 0.832), rgba(219, 217, 219, 0.832)), url("../Imgs/clientbg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.clients .clients_header p {
+  font-size: 1.5rem;
+}
+
+.clients .clients_header h3 {
+  font-weight: 300;
+}
+
+.clients p {
+  font-size: 0.8rem;
+}
+
+.clients .media-body p:first-of-type::after {
+  width: 4rem;
+  margin: 1rem 0 1rem;
+}
+
+.blog .blog_header p {
+  font-size: 1.5rem;
+}
+
+.blog .blog_header h3 {
+  font-weight: 300;
+}
+
+.blog figure .card_note {
+  bottom: 10px;
+  left: -10px;
+  background: #3bd3ba;
+  width: 60px;
+  height: 60px;
+}
+
+.blog .card-body .card-title {
+  font-weight: 600;
+}
+
+.blog .list-group .list-group-item i {
+  color: #3bd3ba;
+}
+
+.blog h6 {
+  font-size: 0.8rem;
+}
+
+.blog p {
+  font-size: 0.8rem;
+}
+
+.map {
+  background-image: linear-gradient(rgba(219, 217, 219, 0.832), rgba(219, 217, 219, 0.832)), url("../Imgs/mapbg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.map a i, .map a h2 {
+  color: #f38181;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.map h2:after {
+  margin: 1rem auto 0;
+  width: 5rem;
+}
+
+.footer {
+  background-color: #f8f8f8;
+}
+
+.footer .footer_logo_text p {
+  font-size: 0.8rem;
+}
+
+.footer .footer_logo_text h6 {
+  font-weight: 400;
+}
+
+.footer .footer_links i {
+  color: #3bd3ba;
+  opacity: 0.7;
+}
+
+.footer .footer_form button {
+  background: #95e1d3;
+  border: 0px solid #95e1d3;
+  color: #fff;
+  margin-left: -30px;
+  width: 40%;
+  display: inline-block;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+}
+
+.footer .end-footer span {
+  color: #f38181;
+}
+/*# sourceMappingURL=style.css.map */
